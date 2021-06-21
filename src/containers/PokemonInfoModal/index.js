@@ -60,7 +60,13 @@ const PokemonInfoModal = ({
     <Container>
       {!loading && Object.keys(pokemonInfo).length ? (
         <>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+            }}
+          >
             <Img src={pokemonImage} alt="" />
             <Name>{capitalize(pokemonName)}</Name>
           </div>
