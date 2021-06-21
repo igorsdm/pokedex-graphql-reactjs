@@ -22,7 +22,7 @@ This is a guide to initialize the application on its development mode. You must 
 
 - [MaterialUI](https://material-ui.com/)
 - [PropTypes](https://www.npmjs.com/package/prop-types)
-- [react-google-charts](https://react-google-charts.com/)
+- [React Google Charts](https://react-google-charts.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Lazyload](https://github.com/twobin/react-lazyload)
 - [React Redux](https://redux.js.org/)
