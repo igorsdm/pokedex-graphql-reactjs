@@ -4,8 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  height: 50vh;
+  justify-content: space-around;
+  height: 60vh;
   color: ${props => props.theme.colors.gray60};
 `;
 
@@ -17,8 +17,7 @@ export const Title = styled.div`
   justify-content: center;
 `;
 
-export const EmptyChart = styled.div`
+export const ChartDiv = styled.div`
   display: flex;
-  height: 250px;
   align-items: center;
 `;

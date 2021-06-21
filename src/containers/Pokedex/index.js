@@ -7,7 +7,7 @@ import Button from '~/components/Button';
 import { clearPokedex } from '~/store/modules/pokemon/actions';
 import { getPokemonsData } from '~/utils/pokemonData';
 
-import { Container, Title, EmptyChart } from './styles';
+import { Container, Title, ChartDiv } from './styles';
 
 const Pokedex = ({ toggleFunction }) => {
   const dispatch = useDispatch();
@@ -22,19 +22,20 @@ const Pokedex = ({ toggleFunction }) => {
   return (
     <Container>
       <Title>Pokedex</Title>
-      {data.length > 1 ? (
-        <Chart
-          width="100%"
-          height="250px"
-          chartType="PieChart"
-          loader={<div>Loading Chart</div>}
-          data={data}
-        />
-      ) : (
-        <EmptyChart>
+
+      <ChartDiv>
+        {data.length > 1 ? (
+          <Chart
+            width="100%"
+            height="250px"
+            chartType="PieChart"
+            loader={<div>Loading Chart</div>}
+            data={data}
+          />
+        ) : (
           <p>Your pokedex is empty!</p>
-        </EmptyChart>
-      )}
+        )}
+      </ChartDiv>
       <Button
         background="buttonBackground2"
         width="80%"
